@@ -71,7 +71,7 @@ public class Main {
         if (passengersQty<=60) {
             answer6 = "остались еще сидячие места";
         } else if (passengersQty<=102) {
-            answer6 = "остались только стоячие места";
+            answer6 = "остались только cтоячие места";
         }
         System.out.println("Если количество пассажиров " + passengersQty + ", то " + answer6);
 
