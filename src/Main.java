@@ -5,22 +5,34 @@ public class Main {
         //Задача 1
         System.out.println("\nЗадача 1:");
         int age = 20;
-        String answer1 = "он не достиг совершеннолетия, нужно немного подождать";
+        String answer1;
         if (age >= 18) {
             answer1 = "он совершеннолетний";
+        } else {
+            answer1 = "он не достиг совершеннолетия, нужно немного подождать";
         }
         System.out.println("Если возраст человека равен " + age + ", то " + answer1);
 
         //Задача 2
         System.out.println("\nЗадача 2:");
         int outsideTemperature = 0;
-        String answer2 = outsideTemperature<5 ? "сегодня холодно, нужно надеть шапку" : "сегодня тепло, можно идти без шапки";
+        String answer2;
+        if (outsideTemperature<5) {
+            answer2 = "сегодня холодно, нужно надеть шапку";
+        } else {
+            answer2 = "сегодня тепло, можно идти без шапки";
+        }
         System.out.println("На улице " + outsideTemperature + " градусов, " + answer2);
 
         //Задача 3
         System.out.println("\nЗадача 3:");
         int speed = 60;
-        String answer3 = speed>60 ? "придется заплатить штраф" : "можно ездить спокойно";
+        String answer3;
+        if (speed>60) {
+            answer3 = "придется заплатить штраф";
+        } else {
+            answer3 = "можно ездить спокойно";
+        }
         System.out.println("Если скорость " + speed + ", то " + answer3);
 
         //Задача 4
@@ -59,7 +71,7 @@ public class Main {
         if (passengersQty<=60) {
             answer6 = "остались еще сидячие места";
         } else if (passengersQty<=102) {
-            answer6 = "остались только стоячие места";
+            answer6 = "остались только cтоячие места";
         }
         System.out.println("Если количество пассажиров " + passengersQty + ", то " + answer6);
 
